@@ -26,5 +26,66 @@
         </div>
         </div>
     </div>
+<!--------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, my name is Michael Chan, and this is my digital portfolio! I am twenty-one years old, and I am currently a senior at Stony Brook University. I am a B.S. Computer Science Major, and I am hoping to pursue a career in software engineering in the future. I have always been interested in computers and technology, and I hope to develop software for those around me to use.
+                        Throughout my time at Stony Brook, I have had the opportunity to take a variety of courses to further my understanding of computer science. Some of these courses include analysis of algorithms, data structures, and software engineering, which taught me how to collaborate on projects and learn a variety of programming languages such as Java, Python, and JavaScript. I have also used frameworks like React and Node.js to create applications for different courses.
+                        This page is here for individuals to get to know me and showcase my personal brand for those that may want to connect. I have highlighted some of the coding projects I have done throughout college to demonstrate what I have learned throughout my career. On this site you can find various information about myself such as my resume, my interests and activities, academic projects, and social media accounts to connect with me. You can navigate the site by clicking on the tabs at the top of the page.
+                        Thank you for visiting my digital portfolio, and please feel free to reach out if you have any questions or inquiries!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Engineer</span><br>Creating Modular Code</li>
+                            <li><span>Web Development</span><br>Creating Web Applications</li>
+                            <li><span>AI Engineer</span><br>Training AI Models</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span> 2023- Present</span><br> Software Engineer</li>
+                            <li><span>Jun 2022 - Aug 2022</span><br>Teacher Assistant</li>
+                            <li><span>Summer 2021</span><br>AT&T Externship</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Per Scholas</li>
+                            <li><span>2019-2023</span><br>Stony Brook University</li>
+                            <li><span>2015-2019</span><br>High School</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     box-sizing: border-box;
-    overflow:hidden
+    
 }
 body{
     background: #080808
@@ -71,6 +71,7 @@ nav ul li:hover ul.dropdown{
 
 nav ul li ul.dropdown li{
     display: block;
+    overflow: hidden;
 }
 
 nav ul li ul.dropdown {
@@ -78,6 +79,7 @@ nav ul li ul.dropdown {
     position: absolute;
     z-index: 999;
     display: none;
+    overflow: hidden;
 }
 
 

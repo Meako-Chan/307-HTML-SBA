@@ -65,6 +65,12 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
 nav ul li:hover ul.dropdown{
     display: block;
 }
